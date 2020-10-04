@@ -1,10 +1,10 @@
 import java.awt.*;
 
 /**
- * Klasa zawiera przyciski na interfejsie u¿ytkownika, a tak¿e atrybuty (pola statyczne),
- * takie jak modele (tekstury) wie¿ i przeciwników, ró¿ne parametry wie¿, takie jak kolor pocisku, cena, obra¿enia, czêstotliwoœæ strza³u, a tak¿e parametry przeciwników, takie jak szybkoœæ, zdrowie, nagroda za pokonanie
+ * Klasa zawiera przyciski na interfejsie uï¿½ytkownika, a takï¿½e atrybuty (pola statyczne),
+ * takie jak modele (tekstury) wieï¿½ i przeciwnikï¿½w, rï¿½ne parametry wieï¿½, takie jak kolor pocisku, cena, obraï¿½enia, czï¿½stotliwoï¿½ï¿½ strzaï¿½u, a takï¿½e parametry przeciwnikï¿½w, takie jak szybkoï¿½ï¿½, zdrowie, nagroda za pokonanie
  * 
- * @author Piotr Anuœkiewicz I7Y1S1
+ * @author Piotr Anuï¿½kiewicz I7Y1S1
  */
 public class List {
 	
@@ -59,9 +59,9 @@ public class List {
 	public static int enemyDelay[] = {45, 20, 70};
 	public static String enemyModels[][] = 
 		{
-				{"imgs/images/tankUp.png", "imgs/images/tankRight.png", "imgs/images/tankDown.png"},
-				{"imgs/images/bikeUp.png", "imgs/images/bikeRight.png", "imgs/images/bikeDown.png"},
-				{"imgs/images/heavytankUp.png", "imgs/images/heavytankRight.png", "imgs/images/heavytankDown.png"}
+				{"imgs/images/tankUp.png", "imgs/images/tankRight.png", "imgs/images/tankDown.png", "imgs/images/tankLeft.png"},
+				{"imgs/images/bikeUp.png", "imgs/images/bikeRight.png", "imgs/images/bikeDown.png", "imgs/images/bikeLeft.png"},
+				{"imgs/images/heavytankUp.png", "imgs/images/heavytankRight.png", "imgs/images/heavytankDown.png", "imgs/images/heavytankLeft.png"}
 		};
 	public ListButton[] button = new ListButton[4];
 	

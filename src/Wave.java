@@ -2,10 +2,10 @@ import java.awt.*;
 import java.util.*;
 
 /**
- * Klasa, której obiekty reprezentuj¹ kolejne fale przeciwników. 
- * Obs³uguje "wpuszczanie" kolejnych przeciwników na planszê oraz odnajdywanie œcie¿ki przez przeciwników
+ * Klasa, ktï¿½rej obiekty reprezentujï¿½ kolejne fale przeciwnikï¿½w. 
+ * Obsï¿½uguje "wpuszczanie" kolejnych przeciwnikï¿½w na planszï¿½ oraz odnajdywanie ï¿½cieï¿½ki przez przeciwnikï¿½w
  * 
- * @author Piotr Anuœkiewicz I7Y1S1
+ * @author Piotr Anuï¿½kiewicz I7Y1S1
  */
 
 public class Wave {
@@ -19,12 +19,12 @@ public class Wave {
 	private int frameDelay;
 	
 	/**
-	 * Konstruktor definiuj¹cy falê przeciwników
+	 * Konstruktor definiujï¿½cy falï¿½ przeciwnikï¿½w
 	 * 
 	 * @param b referencja na obiekt planszy
-	 * @param arg0 liczba zwyk³ych przeciwników
-	 * @param arg1 liczba szybkich przeciwników
-	 * @param arg2 liczba ciê¿kich przeciwników
+	 * @param arg0 liczba zwykï¿½ych przeciwnikï¿½w
+	 * @param arg1 liczba szybkich przeciwnikï¿½w
+	 * @param arg2 liczba ciï¿½kich przeciwnikï¿½w
 	 */
 	public Wave(Board b, int arg0, int arg1, int arg2) {
 		bd = b;
@@ -44,7 +44,7 @@ public class Wave {
 	}
 	
 	/**
-	 * Metoda obs³uguje ruch pojazdu po planszy na zasadzie punktów kontrolnych
+	 * Metoda obsï¿½uguje ruch pojazdu po planszy na zasadzie punktï¿½w kontrolnych
 	 */
 	public void handleTank(Tank t) {
 		if(t.isAlive) {
@@ -251,7 +251,7 @@ public class Wave {
 				case 1:
 					t.moveTank(0, -(t.getSpeed()));
 					if(t.getMyY() <= 2 * bd.getTileSize()) {
-						t.turnTank(1);
+						t.turnTank(3);
 						t.setPart(2);
 					}
 					break;
@@ -279,7 +279,7 @@ public class Wave {
 				case 5:
 					t.moveTank(0, -(t.getSpeed()));
 					if(t.getMyY() <= 2 * bd.getTileSize()) {
-						t.turnTank(1);
+						t.turnTank(3);
 						t.setPart(6);
 					}
 					break;
@@ -313,7 +313,7 @@ public class Wave {
 	}
 	
 	/**
-	 * Metoda obs³uguje ruch "¿yj¹cych" przeciwników po planszy, a tak¿e "wpuszczanie" na ni¹ kolejnych
+	 * Metoda obsï¿½uguje ruch "ï¿½yjï¿½cych" przeciwnikï¿½w po planszy, a takï¿½e "wpuszczanie" na niï¿½ kolejnych
 	 */
 	public long forward(long frameCounter) {
 				
